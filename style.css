@@ -1,12 +1,12 @@
 /* CSS Variables for Light / Dark Mode Theming */
 :root {
   --font-family: 'Inter', sans-serif;
-  
+
   /* Light Mode Colors (Sober/Neutral) */
   --bg-color: #fafafa;
   --text-color: #171717;
   --text-muted: #737373;
-  
+
   /* Navbar Light */
   --nav-bg: rgba(255, 255, 255, 0.9);
   --nav-backdrop-filter: blur(12px);
@@ -14,14 +14,14 @@
   --nav-text: #525252;
   --nav-hover-bg: #f5f5f5;
   --nav-hover-text: #171717;
-  
+
   /* Active Menu Item (Sober Gray Pill) */
   --nav-active-bg: #e5e5e5;
   --nav-active-text: #171717;
-  
+
   /* Separator */
   --separator-color: #e5e5e5;
-  
+
   /* Dark Mode Toggle */
   --toggle-bg: #f5f5f5;
   --toggle-icon: #525252;
@@ -37,21 +37,21 @@
   --bg-color: #171717;
   --text-color: #f5f5f5;
   --text-muted: #a3a3a3;
-  
+
   /* Navbar Dark */
   --nav-bg: rgba(23, 23, 23, 0.85);
   --nav-border: rgba(255, 255, 255, 0.08);
   --nav-text: #a3a3a3;
   --nav-hover-bg: #262626;
   --nav-hover-text: #f5f5f5;
-  
+
   /* Active Menu Item (Sober Dark Gray Pill) */
   --nav-active-bg: #404040;
   --nav-active-text: #fafafa;
-  
+
   /* Separator */
   --separator-color: #404040;
-  
+
   /* Dark Mode Toggle */
   --toggle-bg: #262626;
   --toggle-icon: #d4d4d4;
@@ -189,11 +189,7 @@ a {
 
 /* Sections & Layout */
 .section {
-  padding: 6rem 2rem 4rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 1rem 2rem;
 }
 
 .container {
@@ -204,6 +200,8 @@ a {
 
 .hero {
   text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 0.5rem;
 }
 
 .hero-content {
@@ -275,6 +273,7 @@ h2 {
 p {
   color: var(--text-muted);
   font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 /* Skills Section Design */
@@ -445,10 +444,12 @@ p {
   .nav-links {
     gap: 0.25rem;
   }
+
   .nav-link {
     padding: 0.5rem 0.75rem;
     font-size: 0.9rem;
   }
+
   /* Depending on the exact image, some items might need to wrap or text hidden on very small screens */
 }
 
@@ -457,7 +458,9 @@ p {
     padding: 0.75rem 1rem;
     overflow-x: auto;
   }
+
   .nav-links {
-    padding-bottom: 4px; /* for scrollbar */
+    padding-bottom: 4px;
+    /* for scrollbar */
   }
 }
